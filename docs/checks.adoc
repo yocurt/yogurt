@@ -20,7 +20,7 @@ REF[REQ, filetype: FILES::REQ]
 
 ### Linking
 
-- ID[LINKS::filetype, from: REQ, to: FILES, revers: id]
+- ID[LINKS::filetype, to: FILES, revers: idtype]
 - ID[LINKS::mentions]
 - ID[LINKS::parent, revers: child]
 
