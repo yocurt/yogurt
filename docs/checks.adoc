@@ -1,0 +1,30 @@
+# ID[REQ::Checks, caption: "Perform Checks"]
+
+It must be possible to perform checks on the created data structure. 
+These checks should be executed on ID[::Filename, caption: "file name"]s,
+on ID[::Linking, caption: "linking"]s and ID[::Attribute, caption: "attribute"]s
+
+## To enable checks
+
+Define your data structure.
+
+### Files
+
+- ID[FILES::adoc, name: "*.adoc"]
+- ID[FILES::md, name: "*.md"]
+- ID[FILES::markup, name: '$(FILES::md.name) + ", " + $(FILES::adoc.name)'] ???
+- ID[FILES::REQ, name: "docs/RQM*/RQM*.adoc"]
+
+REF[REQ, filetype: FILES::REQ]
+
+### Linking
+
+- ID[LINKS::filetype, from: REQ, to: FILES, revers: id]
+- ID[LINKS::mentions, from: *, to: *]
+
+### Attribute
+
+- ID[ATTRIBUTE::caption, mandatory: true, type: string]
+- ID[ATTRIBUTE::parent, mandatory: false, type: link]
+- ID[ATTRIBUTE::mandatory, parent: ATTRIBUTE, mandatory: true, type: boolean]
+- ID[ATTRIBUTE::name, parent: FILES, mandatory: true, type: string]
