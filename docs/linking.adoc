@@ -2,7 +2,7 @@
 
 ID[GOAL::Linking]
 
-ADD[set_parent, GOAL: Linking]
+ADD[set_goal, goal: GOAL::Linking]
 
 == Unique IDs
 ID[REQ::UniqueID]
@@ -13,7 +13,7 @@ unique identifier, that states where a element is defined.
 These IDs shall be easy to read
 ID[REQ::Readablility]
 
-END[set_parent]
+END[set_goal]
 
 == Minimal vialable product
 
