@@ -1,0 +1,24 @@
+= Linking with Yogurt
+
+ID[GOAL::Linking]
+
+ADD[set_parent, GOAL: Linking]
+
+== Unique IDs
+ID[REQ::UniqueID]
+
+To link places in different files there needs to be a 
+unique identifier, that states where a element is defined.
+
+These IDs shall be easy to read
+ID[REQ::Readablility]
+
+END[set_parent]
+
+== Minimal vialable product
+
+ID[RELEASE::MVP, completes: Target::Essential]
+
+Linking elements in different documents is essential and needs to be part of the first release
+
+ID[Target::Essential] REF[GOAL::Linking, Target: Essential]
