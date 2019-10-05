@@ -1,0 +1,34 @@
+# Realize V-Model in Yogurt
+
+ID[REQ::VModel]
+
+## Basic parts of a V-Model
+
+- ID[REQ, caption: "Requirements"]
+- ID[ARCH, caption: "Architecture"]
+- ID[DIGN, caption: "Software Design"]
+- ID[IMPL, caption: "Implementation"]
+- ID[TEST, caption: "Unit Tests"]
+- ID[INTT, caption: "Integration Tests"]
+- ID[PROT, caption: "Product Tests"]
+- ID[V&V, caption: "Verification and Validation"]
+
+
+## Extending the V-Model
+
+### User Expirience
+
+- ID[UX, caption: "User Expirience"]
+- ID[UXT, caption: "User Expirience Tests"]
+- ID[UXD, caption: "User Expirience Design"]
+
+### Environment Description
+
+- ID[ENV, caption: "Environment Description"]
+
+### Others
+
+- ID[HARA, caption: "Hazard and Risk Analysis"]
+- ID[DDD, caption: "Design Decision Documents"]
+- ID[MDP, caption: "Management Decision Proposal"]
+- ID[GOAL, caption: "A goal targeted to be achived"]
