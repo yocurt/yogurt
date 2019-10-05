@@ -1,0 +1,3 @@
+# Link different types of files
+
+ID[REQ::Type_Indipendant_Links, Target: Essential]
