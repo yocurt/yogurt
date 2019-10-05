@@ -1,10 +1,22 @@
-# ID[REQ::Checks, caption: "Perform Checks"]
+# Language
+
+## ID[REQ::Base_Elements, caption: "Base Elements"]
+
+- ID[::ID]
+- ID[::REF]
+
+## ID[REQ::Helper_Elements, caption: "Helper Elements"]
+
+- ID[::ADD]
+- ID[::END]
+
+## Extend the Base
 
 It must be possible to perform checks on the created data structure. 
 These checks should be executed on ID[::Filename, caption: "file name"]s,
 on ID[::Linking, caption: "linking"]s and ID[::Attribute, caption: "attribute"]s
 
-## To enable checks
+## ID[REQ::Checks, caption: "Perform Checks"]
 
 Define your data structure.
 
