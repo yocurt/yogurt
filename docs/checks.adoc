@@ -15,16 +15,18 @@ Define your data structure.
 - ID[FILES::markup, name: '$(FILES::md.name) + ", " + $(FILES::adoc.name)'] ???
 - ID[FILES::REQ, name: "docs/RQM*/RQM*.adoc"]
 
+All requierements must be in the requirements files location:
 REF[REQ, filetype: FILES::REQ]
 
 ### Linking
 
 - ID[LINKS::filetype, from: REQ, to: FILES, revers: id]
-- ID[LINKS::mentions, from: *, to: *]
+- ID[LINKS::mentions]
+- ID[LINKS::parent, revers: child]
 
 ### Attribute
 
 - ID[ATTRIBUTE::caption, mandatory: true, type: string]
-- ID[ATTRIBUTE::parent, mandatory: false, type: link]
-- ID[ATTRIBUTE::mandatory, parent: ATTRIBUTE, mandatory: true, type: boolean]
-- ID[ATTRIBUTE::name, parent: FILES, mandatory: true, type: string]
+- ID[ATTRIBUTE::contains, mandatory: false, type: ID]
+- ID[ATTRIBUTE::mandatory, contains: ATTRIBUTE, mandatory: true, type: boolean]
+- ID[ATTRIBUTE::name, contains: FILES, mandatory: true, type: string]
