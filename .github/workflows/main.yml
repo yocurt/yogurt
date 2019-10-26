@@ -1,6 +1,9 @@
 name: Update gh-pages
 
-on: [push]
+on:
+  push:	
+    branches:	
+      - master
 
 jobs:
   build:
@@ -9,10 +12,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - run: mkdir public
+      - run: mkdir build
       - run: echo "# Hello World\nvia Pandoc" > input.md
       - uses: maxheld83/pandoc@v2
         with:
-          args: "--standalone --output=public/index.html input.md"
+          args: "--standalone --output=build/index.html input.md"
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@2.0.3
+        env:
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN_PAGES }}
+          FOLDER: build
