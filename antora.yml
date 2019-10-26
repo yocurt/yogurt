@@ -1,6 +1,6 @@
 name: yogurt
 title: Yogurt
 version: HEAD
-start_page: ROOT:Linking.adoc
+start_page: ROOT:linking.adoc
 nav:
 - modules/ROOT/nav.adoc
