@@ -21,4 +21,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@2.0.3
         env:
           ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN_PAGES }}
+          BASE_BRANCH: master
+          BRANCH: gh-pages
           FOLDER: build
