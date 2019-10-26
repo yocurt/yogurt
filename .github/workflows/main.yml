@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: mkdir build
-      - run: echo "# Hello World\nvia Pandoc" > input.md
+      - run: echo "# Hello World from Pandoc" > input.md
       - uses: maxheld83/pandoc@v2
         with:
           args: "--standalone --output=build/index.html input.md"
