@@ -1,0 +1,21 @@
+name: Update gh-pages
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - run: mkdir public
+      - run: echo "# Hello World" > input.md
+      - uses: maxheld83/pandoc@v2
+        with:
+          args: "--standalone --output=public/index.html input.md"
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@2.0.3
