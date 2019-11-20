@@ -2,4 +2,4 @@
 * xref:language.adoc[Language]
 * xref:linking.adoc[Linking]
 * xref:vmodel.adoc[V-Model]
-* xref:markdown.md[Markdown]
+* xref:markdown.adoc[Markdown]

@@ -1,8 +1,8 @@
-# Realize V-Model in Yogurt
+= Realize V-Model in Yogurt
 
 ID[REQ::VModel]
 
-## Basic parts of a V-Model
+== Basic parts of a V-Model
 
 - ID[REQ, caption: "Requirements"]
 - ID[ARCH, caption: "Architecture"]
@@ -14,19 +14,19 @@ ID[REQ::VModel]
 - ID[V&V, caption: "Verification and Validation"]
 
 
-## Extending the V-Model
+== Extending the V-Model
 
-### User Expirience
+=== User Expirience
 
 - ID[UX, caption: "User Expirience"]
 - ID[UXT, caption: "User Expirience Tests"]
 - ID[UXD, caption: "User Expirience Design"]
 
-### Environment Description
+=== Environment Description
 
 - ID[ENV, caption: "Environment Description"]
 
-### Others
+=== Others
 
 - ID[HARA, caption: "Hazard and Risk Analysis"]
 - ID[DDD, caption: "Design Decision Documents"]
