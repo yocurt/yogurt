@@ -2,7 +2,7 @@
 
 ## Idea behind Yogurt
 
-The Idea behind yogurt is to remove the pain of spice. Actually it is a way to even enjoy it much more.
+The idea behind yogurt is to remove the pain of spice. Actually it is a way to even enjoy it much more.
 
 Of course we are not talking about food. It is about proper software development. But actually the focus lies on linking data in documents.
 
